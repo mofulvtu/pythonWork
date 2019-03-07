@@ -59,6 +59,10 @@ def main():
         f.write("password:{} strength:{}".format(password, pwd_strength)+"\n")
         f.close()
 
+        f = open("password_v3.txt", "r")
+        for line in f:
+            print("read :{}".format(line))
+
         if pwd_strength == 3:
             print("密码符合要求！")
             break
